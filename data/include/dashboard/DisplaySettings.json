@@ -1,0 +1,166 @@
+{
+  "dashboard": {
+    "page-title": "Dashboard",
+    "content": [
+      {
+        "title": "Present workers",
+        "url": "manage-workers.php",
+        "post": "load_workers",
+        "columns": ["ID", "First name",
+                    "Last name", "Join date"],
+        "add-btn": false,
+        "resualt-tems": ["All present workers"]
+      },
+      {
+        "title": "Current requests",
+        "url": "manage-requests.php",
+        "post": "load_requests",
+        "columns": ["ID", "First name", "Last name",
+                    "Machine used", "Requesting date",
+                    "Total weight", "Units number"],
+        "add-btn": true,
+        "resualt-tems": ["Total current requests"]
+      },
+      {
+        "title": "Units for today",
+        "url": "manage-units.php",
+        "post": "load_units",
+        "columns": ["ID", "Client name", "Machine Weight",
+                    "Production date", "Producted by"],
+        "add-btn": true,
+        "resualt-tems": ["Total weight producted for today",
+                         "Total units for today"]
+      }
+    ]
+  },
+
+  "workers": {
+    "page-title": "Workers",
+    "content": [
+      {
+        "title": "Present workers",
+        "url": "manage-workers.php",
+        "post": "load_workers",
+        "columns": ["ID", "First name",
+                    "Last name", "Join date"],
+        "add-btn": false,
+        "resualt-tems": ["All present workers"]
+      },
+      {
+        "title": "Absente workers",
+        "url": "manage-workers.php",
+        "post": "load_workers",
+        "columns": ["ID", "First name",
+                    "Last name", "Join date"],
+        "add-btn": false,
+        "resualt-tems": ["All absente workers"]
+      },
+      {
+        "title": "Old workers",
+        "url": "manage-workers.php",
+        "post": "load_workers",
+        "columns": ["ID", "First name",
+                    "Last name", "Join date",
+                    "Checkout date"],
+        "add-btn": false,
+        "resualt-tems": ["All old workers"]
+      },
+      {
+        "title": "All workers",
+        "url": "manage-workers.php",
+        "post": "load_workers",
+        "columns": ["ID", "First name",
+                    "Last name", "Join date",
+                    "Exists"],
+        "add-btn": false,
+        "resualt-tems": ["Total workers"]
+      }
+    ]
+  },
+
+  "requests": {
+    "page-title": "Requests",
+    "content": [
+      {
+        "title": "Current requests",
+        "url": "manage-requests.php",
+        "post": "load_requests",
+        "columns": ["ID", "First name", "Last name",
+                    "Machine used", "Requesting date",
+                    "Total weight", "Units number"],
+        "add-btn": true,
+        "resualt-tems": ["Total current requests"]
+      },
+      {
+        "title": "Old requests",
+        "url": "manage-requests.php",
+        "post": "load_requests",
+        "columns": ["ID", "First name",
+                    "Last name", "Machine used",
+                    "Requesting date", "End production date",
+                    "Total weight", "Units number"],
+        "add-btn": false,
+        "resualt-tems": ["Total old requests"]
+      },
+      {
+        "title": "All requests",
+        "url": "manage-requests.php",
+        "post": "load_requests",
+        "columns": ["ID", "First name",
+                    "Last name", "Machine used",
+                    "Requesting date", "End production date",
+                    "Total weight", "Units number"],
+        "add-btn": true,
+        "resualt-tems": ["Total requests"]
+      }
+    ]
+  },
+
+  "stock": {
+    "page-title": "Stock",
+    "content": [
+      {
+        "title": "Units for today",
+        "url": "manage-units.php",
+        "post": "load_units",
+        "columns": ["ID", "Client name", "Machine Weight",
+                    "Production date", "Producted by"],
+        "add-btn": true,
+        "resualt-tems": ["Total weight producted for today",
+                         "Total units for today"]
+      },
+      {
+        "title": "Units on stock",
+        "url": "manage-units.php",
+        "post": "load_units",
+        "columns": ["ID", "Client name", "Machine Weight",
+                    "Production date", "Producted by"],
+        "add-btn": false,
+        "resualt-tems": ["Total weight on stock",
+                         "Total units on stock"]
+      },
+      {
+        "title": "Old units",
+        "url": "manage-units.php",
+        "post": "load_units",
+        "columns": ["ID", "Client name",
+                    "Machine Weight", "Production date",
+                    "Invoice date", "Producted by"],
+        "add-btn": false,
+        "resualt-tems": ["Total weight producted",
+                         "Total units producted"]
+      },
+      {
+        "title": "All units producted",
+        "url": "manage-units.php",
+        "post": "load_units",
+        "columns": ["ID", "Client name",
+                    "Machine Weight", "Production date",
+                    "Invoice date", "Producted by"],
+        "add-btn": true,
+        "resualt-tems": ["Total weight producted",
+                         "Total units producted"]
+      }
+    ]
+  }
+}

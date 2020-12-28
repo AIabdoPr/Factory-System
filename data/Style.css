@@ -1,0 +1,312 @@
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Ubuntu:400,500,700&display=swap'); */
+@import url('include/google.fonts/fonts.css');
+
+:root {
+  --gbg: #0F5492;
+  --gbg-hover: #1D75DF;
+  --border-color: #093A65;
+  --focus-bg: #0E497D;
+}
+
+.btn {
+  background-color: var(--gbg);
+  border: 1px solid var(--gbg);
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: var(--gbg-hover);
+  border: 1px solid var(--gbg-hover);
+  color: #fff;
+}
+
+.dropdown-menu {
+  padding: 2px;
+  border-radius: 4px;
+  background-color: var(--gbg);
+  width: min-content;
+}
+
+.menu-list {
+  margin: 0;
+  display: grid;
+}
+
+.menu-list .menu-list-item {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* font-family: 'Ubuntu', sans-serif; */
+  font-family: 'Calibri', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: var(--gbg);
+}
+
+table {
+  background-color: #fff;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 2px;
+  width: 100%;
+
+}
+th, td {
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 5px 6px;
+}
+th:first-child, td:first-child {
+  border-left: 1px solid var(--border-color);
+}
+th:last-child, td:last-child {
+  border-right: 1px solid var(--border-color);
+}
+th {
+  border-top: 1px solid var(--border-color);
+  padding: 12px 10px 12px 10px;
+  text-align: left;
+  background-color: var(--gbg);
+  color: white;
+}
+/*
+tr:hover {
+  background-color: #ddd;
+}
+tr:nth-child(even) {
+  background-color: #eef;
+}
+*/
+
+/* top-left border-radius */
+tr:first-child th:first-child {
+  border-top-left-radius: 2px;
+}
+
+/* top-right border-radius */
+tr:first-child th:last-child {
+  border-top-right-radius: 2px;
+}
+
+/* bottom-left border-radius */
+tr:last-child td:first-child {
+  border-bottom-left-radius: 2px;
+}
+
+/* bottom-right border-radius */
+tr:last-child td:last-child {
+  border-bottom-right-radius: 2px;
+}
+
+.noties{    
+  width: 60%;
+  top: 20px;
+  right: 20%;
+  font-weight: bold;    
+  z-index: 1031; /* Max Z-Index in Fixed Nav Menu is 1030*/
+  text-align: center;
+  position: fixed;
+}
+
+.noties.topleft {
+  bottom: unset;
+  right: unset;
+  width: 30%;
+  top: 20px;
+  left: 20px;
+}
+
+.noties.topright {
+  bottom: unset;
+  left: unset;
+  width: 30%;
+  top: 20px;
+  right: 20px;
+}
+
+.noties.bottomright {
+  top: unset;
+  left: unset;
+  width: 30%;
+  bottom: 20px;
+  right: 20px;
+}
+
+.noties.bottomleft {
+  top: unset;
+  right: unset;
+  width: 30%;
+  bottom: 20px;
+  left: 20px;
+}
+
+.noties.bottom {
+  top: unset;
+  bottom: 20px;
+}
+
+.alert{
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#rmenu {
+  background-color: #eee;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+  z-index: 1000;
+  position: absolute;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.btn-add {
+  font-size: 14px;
+  background-color: var(--gbg);
+  border: 1px solid var(--gbg);
+  margin: 2px 0;
+  float: right;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 8px;
+  background-color: red;
+  color: #fff;
+}
+
+.btn-add, table {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content/Box */
+.modal-body {
+  margin: auto;
+  width: fit-content;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+#todolist-items, .todolist-items {
+  overflow: auto;
+  height: 100px;
+}
+#todolist-items li {
+  padding: 4px;
+}
+
+#thread-name {
+  width: 55%;
+}
+
+#thread-weight {
+  width: 40%;
+}
+
+#remove-item {
+  width: 5%;
+}
+
+#thread-name, #thread-weight, #remove-item {
+  padding: 0 5px;
+  overflow-wrap: break-word;
+}
+
+.request-details {
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+#updates {
+  display: grid;
+  grid-template-rows: 45px auto;
+  z-index: 1000;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  width: 280px;
+  right: 20px;
+  bottom: 2px;
+}
+
+.updates-up {
+  height: 400px;
+}
+
+.updates-down {
+  height: 45px;
+}
+
+#updates-tool-bar {
+  display: grid;
+  grid-template-columns: 43% 43% auto;
+  background-color: var(--gbg);
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  top: 0;
+  left: 0;
+}
+
+#details {
+  overflow: auto;
+  border-radius:0 0 5px 5px;
+}
